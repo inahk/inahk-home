@@ -17,6 +17,9 @@
       color: var(--main-color);
       font-size: 12px;
       opacity: 0.4;
+      &.selected {
+        opacity: 1;
+      }
     }
   }
 }
