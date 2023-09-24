@@ -1,0 +1,22 @@
+#footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 10000;
+}
+
+.footer-nav {
+  @include flex($justify: center);
+  padding: 48px;
+  .nav-list {
+    @include flex();
+    column-gap: 28px;
+    li {
+      font-family: var(--subEng-font);
+      font-variation-settings: "wght" 800;
+      color: var(--main-color);
+      font-size: 12px;
+      opacity: 0.4;
+    }
+  }
+}

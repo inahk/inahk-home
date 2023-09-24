@@ -100,3 +100,13 @@ img {
 #skip a:active {
   top: 10px;
 }
+
+html,
+body,
+#root,
+main {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-size: 0;
+}
