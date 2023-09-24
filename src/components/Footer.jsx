@@ -6,16 +6,16 @@ const FooterNav = [
     url: "#main",
   },
   {
-    title: "DESIGN",
-    url: "#design",
-  },
-  {
     title: "ART",
     url: "#art",
   },
   {
     title: "COMMISION",
     url: "#commision",
+  },
+  {
+    title: "DESIGN",
+    url: "#design",
   },
 ];
 
