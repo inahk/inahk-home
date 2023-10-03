@@ -1,0 +1,92 @@
+#ArtDetail {
+  @include flex($justify: center);
+  column-gap: 144px;
+  padding: 148px;
+  z-index: 1000;
+  .detail-data,
+  .detail-img,
+  .detail-guest {
+    width: 100%;
+    height: 100%;
+  }
+  .detail-data {
+    @include flex($direction: column, $align: flex-start);
+    row-gap: 24px;
+    overflow: hidden;
+  }
+  .detail-title {
+    @include flex($justify: space-between, $align: flex-end);
+    column-gap: 12px;
+    width: 100%;
+    border-bottom: solid 1px rgba($text-color, 0.4);
+    padding: 8px 4px;
+    .art-title,
+    .art-date {
+      @extend .mainEng-font;
+      white-space: nowrap;
+      color: $text-color;
+    }
+    .art-title {
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-all;
+    }
+  }
+  .detail-description {
+    padding: 8px 4px;
+    h3 {
+      word-break: break-all;
+      color: $text-color;
+    }
+  }
+  .detail-img {
+    @include flex($justify: center);
+    position: relative;
+  }
+  .img-screen {
+    @include flex($justify: center);
+    max-width: calc(88vh - 288px);
+    height: calc(99vh - 288px);
+    box-shadow: 40px 80px 200px rgba($sub1-main-color, 0.2);
+    overflow: hidden;
+  }
+  .art-img {
+    @include flex($justify: center);
+    display: inline-flex;
+
+    img {
+      height: calc(100vh - 288px);
+    }
+  }
+  .detail-guest {
+    @include flex($direction: column, $align: flex-start);
+    row-gap: 24px;
+    overflow: hidden;
+  }
+  .guest-title {
+    @include flex($justify: space-between, $align: flex-end);
+    width: 100%;
+    height: 48px;
+    padding: 8px 4px;
+    h6 {
+      @extend .mainEng-font;
+      color: $text-color;
+    }
+  }
+  .message-list {
+    @include flex($direction: column, $align: flex-start);
+    row-gap: 16px;
+    width: 100%;
+  }
+  .message {
+    @include flex();
+    padding: 12px;
+    width: 100%;
+    height: 36px;
+    border: solid 1px rgba($text-color, 0.4);
+    h5 {
+      color: $text-color;
+    }
+  }
+}

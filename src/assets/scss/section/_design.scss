@@ -1,0 +1,112 @@
+#Design {
+  background-color: $sub2-bg-color;
+  z-index: 100;
+  .content {
+    @include flex($justify: center);
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .bg-text {
+    @include flex($direction: column);
+    row-gap: 12px;
+    position: absolute;
+    transform: translateX(-360px) translateZ(-960px);
+    opacity: 0.1;
+    filter: blur(12px) brightness(2);
+    h1 {
+      @extend .subEng-font;
+      color: $sub2-main-color;
+    }
+  }
+  .design-nav {
+    position: absolute;
+    top: 124px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .design-pagination {
+    @include flex();
+    column-gap: 4px;
+    .page {
+      width: 8px;
+      height: 4px;
+      background-color: $sub2-main-color;
+      opacity: 0.4;
+      &.selected {
+        opacity: 1;
+      }
+    }
+  }
+  .design-content {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: max(240px, 24vh);
+  }
+  .design-list {
+    @include flex();
+    column-gap: max(24px, 2vh);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 calc(50% - max(222px, 19.5vh));
+    transition: 0.8s ease-out;
+  }
+  .design {
+    @include flex($justify: center, $align: flex-start);
+    position: relative;
+    width: max(444px, 37vh);
+    height: max(324px, 27vh);
+    &.selected {
+      cursor: pointer;
+      .art-img img {
+        opacity: 1;
+      }
+      .art-data {
+        transform: translateY(-100%);
+      }
+    }
+  }
+  .design-img {
+    @include flex($justify: center);
+    width: 96%;
+    height: 72%;
+    margin-top: 1.5%;
+    background-color: $sub2-main-color;
+    overflow: hidden;
+    img {
+      height: calc(100vh - 288px);
+      opacity: 0.4;
+      transition: 0.8s ease-out;
+    }
+  }
+  .design-monitor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../img/img_monitor.svg);
+    background-position: center;
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
+  }
+
+  .art-data {
+    @include flex($justify: space-between);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 4px;
+    transition: 0.4s ease-out;
+    z-index: -1;
+    h6,
+    p {
+      @extend .mainEng-font;
+      color: $text-color;
+      opacity: 0.6;
+    }
+  }
+}

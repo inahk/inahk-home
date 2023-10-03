@@ -1,35 +1,29 @@
 export const Nav = [
   {
-    title: (
-      <>
-        <span style={{ color: "#FF4B4B" }}>{"D"}</span>ESIGN
-      </>
-    ),
-    url: "#design",
+    letter: "D",
+    title: "ESIGN",
+    color: "#FF4B4B",
+    url: "Design",
     keyword1: "WEB",
     keyword2: "EDITORIAL",
     keyword3: "GRAPHIC",
   },
   {
-    title: (
-      <>
-        <span style={{ color: "#278bff" }}>{"A"}</span>rt
-      </>
-    ),
-    url: "#art",
+    letter: "A",
+    title: "rt",
+    color: "#278bff",
+    url: "Art",
     keyword1: "ILLUST",
     keyword2: "CHARACTER",
     keyword3: "DRAWING",
   },
-  {
-    title: (
-      <>
-        <span style={{ color: "#FFB341" }}>{"C"}</span>OMMISION
-      </>
-    ),
-    url: "#commision",
-    keyword1: "DESIGN",
-    keyword2: "CHARACTER",
-    keyword3: "REQUEST",
-  },
+  // {
+  //   letter: "C",
+  //   title: "OMMISSION",
+  //   color: "#FFB341",
+  //   url: "Commission",
+  //   keyword1: "DESIGN",
+  //   keyword2: "CHARACTER",
+  //   keyword3: "REQUEST",
+  // },
 ];

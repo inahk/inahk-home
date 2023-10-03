@@ -1,32 +1,33 @@
 #header {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   z-index: 10000;
-}
-
-.header-inner {
-  @include flex($justify: center);
-  padding: 48px;
-  position: relative;
-}
-
-.header-logo {
-  a {
-    font-family: var(--mainEng-font);
-    font-variation-settings: "wght" 800;
-    color: var(--main-color);
-    font-size: 28px;
+  pointer-events: none;
+  .header-inner {
+    @include flex($justify: center);
+    position: relative;
+    padding: var(--main-margin);
   }
-}
-
-.header-info {
-  position: absolute;
-  right: 48px;
-  width: 48px;
-  height: 48px;
-  background-image: url(../../../assets/img/icon_user.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  .header-logo {
+    a {
+      font-size: 28px;
+      @extend .mainEng-font;
+      color: $main-color;
+      pointer-events: all;
+    }
+  }
+  .header-info {
+    position: absolute;
+    right: var(--main-margin);
+    width: 48px;
+    height: 48px;
+    background-image: url(../../../assets/img/icon_user.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    pointer-events: all;
+  }
 }

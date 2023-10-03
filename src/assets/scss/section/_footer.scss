@@ -1,22 +1,26 @@
 #footer {
   position: fixed;
-  width: 100%;
+  left: 0;
   bottom: 0;
+  width: 100%;
   z-index: 10000;
-}
-
-.footer-nav {
-  @include flex($justify: center);
-  padding: 48px;
+  pointer-events: none;
+  .footer-nav {
+    @include flex($justify: center);
+    padding: var(--main-margin);
+  }
   .nav-list {
     @include flex();
     column-gap: 28px;
     li {
-      font-family: var(--subEng-font);
-      font-variation-settings: "wght" 800;
-      color: var(--main-color);
-      font-size: 12px;
       opacity: 0.4;
+      transition: 0.2s;
+      pointer-events: all;
+      a {
+        @extend p;
+        @extend .subEng-font;
+        color: $main-color;
+      }
       &.selected {
         opacity: 1;
       }

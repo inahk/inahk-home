@@ -1,0 +1,274 @@
+.animation-container {
+  position: relative; /* 컨테이너를 relative로 설정 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.page-enter {
+  #Home {
+    .nav-title a {
+      transform: translateY(100%) !important;
+    }
+    .bg-text {
+      opacity: 0 !important;
+    }
+  }
+  #Design {
+    opacity: 0 !important;
+    .design-list {
+      transform: translateX(100vw) !important;
+    }
+    .design-pagination,
+    .bg-text h1 {
+      opacity: 0;
+    }
+  }
+  #ArtMain {
+    opacity: 0 !important;
+    .art-list {
+      transform: translateX(100vw) !important;
+    }
+    .art-pagination,
+    .bg-text h1 {
+      opacity: 0;
+    }
+  }
+}
+
+.page-enter-active {
+  #Home {
+    opacity: 1 !important;
+    transition: 1000ms ease-in-out !important;
+    .nav-title a {
+      transform: translateY(0%) !important;
+      transition-property: transform !important;
+      transition-duration: 400ms !important;
+      transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1) !important;
+      transition-delay: 2000ms !important;
+    }
+    .bg-text {
+      opacity: 0.4 !important;
+      transition: 600ms !important;
+      transition-delay: 1400ms !important;
+    }
+  }
+  #Design {
+    opacity: 1 !important;
+    transition: 1200ms ease-in-out !important;
+    .design-list {
+      transform: translateX(0) !important;
+      transition-property: transform !important;
+      transition-duration: 1200ms !important;
+      transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1) !important;
+      transition-delay: 800ms !important;
+    }
+    .design-pagination,
+    .bg-text h1 {
+      opacity: 1;
+      transition-property: opacity !important;
+      transition-duration: 400ms !important;
+      transition-timing-function: ease-in-out !important;
+      transition-delay: 2000ms !important;
+    }
+  }
+  #ArtMain {
+    opacity: 1 !important;
+    transition: 1200ms ease-in-out !important;
+    .art-list {
+      transform: translateX(0) !important;
+      transition-property: transform !important;
+      transition-duration: 1200ms !important;
+      transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1) !important;
+      transition-delay: 800ms !important;
+    }
+    .art-pagination,
+    .bg-text h1 {
+      opacity: 1;
+      transition-property: opacity !important;
+      transition-duration: 400ms !important;
+      transition-timing-function: ease-in-out !important;
+      transition-delay: 2000ms !important;
+    }
+  }
+}
+
+.page-exit {
+  #ArtDetail {
+    .img-screen {
+      width: inherit !important;
+    }
+  }
+}
+
+.page-exit-active {
+  #Home {
+    .nav-title a {
+      transform: translateY(100%) !important;
+      transition-property: transform !important;
+      transition-duration: 600ms !important;
+      transition-timing-function: cubic-bezier(
+        0.6,
+        -0.28,
+        0.74,
+        0.05
+      ) !important;
+    }
+
+    .bg-text {
+      opacity: 0 !important;
+      transition: 200ms !important;
+    }
+  }
+  #Design {
+    opacity: 0 !important;
+    transition: 800ms ease-in-out !important;
+    transition-delay: 800ms !important;
+    .design-list {
+      transform: translateX(100vw) !important;
+      transition-property: transform !important;
+      transition-duration: 1000ms !important;
+      transition-timing-function: cubic-bezier(
+        0.6,
+        -0.28,
+        0.74,
+        0.05
+      ) !important;
+      transition-delay: 400ms !important;
+    }
+    .design-pagination,
+    .bg-text h1 {
+      opacity: 0;
+      transition-property: opacity !important;
+      transition-duration: 400ms !important;
+      transition-timing-function: ease-in-out !important;
+    }
+  }
+  #ArtMain {
+    opacity: 0 !important;
+    transition: 800ms ease-in-out !important;
+    transition-delay: 800ms !important;
+    .art-list {
+      transform: translateX(100vw) !important;
+      transition-property: transform !important;
+      transition-duration: 1000ms !important;
+      transition-timing-function: cubic-bezier(
+        0.6,
+        -0.28,
+        0.74,
+        0.05
+      ) !important;
+      transition-delay: 400ms !important;
+    }
+    .art-pagination,
+    .bg-text h1 {
+      opacity: 0;
+      transition-property: opacity !important;
+      transition-duration: 400ms !important;
+      transition-timing-function: ease-in-out !important;
+    }
+  }
+  #ArtDetail {
+    opacity: 0 !important;
+    transition-property: opacity !important;
+    transition: 1000ms ease-in-out !important;
+  }
+}
+
+.section-enter {
+  #ArtDetail {
+    opacity: 0 !important;
+    .detail-data {
+      transform: translate(0, 8%);
+      opacity: 0 !important;
+    }
+    .detail-guest {
+      transform: translate(0, 8%);
+      opacity: 0 !important;
+    }
+    .img-screen {
+      width: max(444px, 37vh) !important;
+      height: max(216px, 18vh) !important;
+    }
+  }
+}
+
+.section-enter-active {
+  #ArtDetail {
+    opacity: 1 !important;
+    transition-property: opacity !important;
+    transition-duration: 1000ms !important;
+    transition-timing-function: ease-in-out !important;
+    .detail-data {
+      transform: translate(0, 0%);
+      opacity: 1 !important;
+      transition-property: transform, opacity !important;
+      transition-duration: 800ms !important;
+      transition-timing-function: ease-in-out !important;
+      transition-delay: 1600ms !important;
+    }
+    .detail-guest {
+      transform: translate(0, 0%);
+      opacity: 1 !important;
+      transition-property: transform, opacity !important;
+      transition-duration: 800ms !important;
+      transition-timing-function: ease-in-out !important;
+      transition-delay: 1600ms !important;
+    }
+    .img-screen {
+      width: inherit !important;
+      height: inherit !important;
+      transition-property: width, height !important;
+      transition-duration: 100ms, 500ms !important;
+      transition-timing-function: ease-in-out !important;
+      transition-delay: 1000ms, 1200ms !important;
+    }
+  }
+}
+
+.section-exit {
+  #ArtDetail {
+    .img-screen {
+      width: inherit !important;
+    }
+  }
+}
+
+.section-exit-active {
+  #ArtDetail {
+    opacity: 0 !important;
+    transition-property: opacity !important;
+    transition: 1000ms ease-in-out !important;
+    transition-delay: 1400ms !important;
+    .detail-data {
+      opacity: 0 !important;
+      transition-property: transform, opacity !important;
+      transition-duration: 600ms !important;
+      transition-timing-function: ease-in-out !important;
+    }
+    .detail-guest {
+      opacity: 0 !important;
+      transition-property: transform, opacity !important;
+      transition-duration: 600ms !important;
+      transition-timing-function: ease-in-out !important;
+    }
+    .img-screen {
+      width: max(444px, 37vh) !important;
+      height: max(216px, 18vh) !important;
+      transition-property: width, height !important;
+      transition-duration: 300ms, 600ms !important;
+      transition-timing-function: ease-in-out !important;
+      transition-delay: 400ms, 800ms !important;
+    }
+  }
+}
+
+#Art {
+  & > .back-nav {
+    z-index: 100;
+  }
+  #Artdetail > .back-nav {
+    z-index: 1000;
+  }
+}

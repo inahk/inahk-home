@@ -1,19 +1,31 @@
+$main-color: #2f4560;
+$sub-color: #cfd9e4;
+
+$text-color: #5f5f5f;
+
+$white: #fff;
+$black: #000;
+
+$bg-color: #ededed;
+
+$sub1-main-color: #2f4560;
+$sub1-bg-color: #cfd9e4;
+
+$sub2-main-color: #602f2f;
+$sub2-bg-color: #e4cfcf;
+
 :root {
-  --mainEng-font: postea-variable;
-  --subEng-font: "organetto-variable";
-  --mainKor-font: "Pretendard";
+  --main-margin: 48px;
 
-  --main-color: #2f4560;
-
-  --mainBg-color: #ededed;
+  // --main-color: #2f4560;
+  // --mainBg-color: #ededed;
   // --subBg100: #cdc0b1;
   // --subBg200: #afa395;
   // --subBg300: #81887c;
   // --subBg400: #afa7a2;
   // --subBg500: #a6afa2;
-
-  --white: #fff;
-  --black: #000;
+  // --white: #fff;
+  // --black: #000;
   // --black100: #2b2b2b;
   // --black200: #434343;
   // --black300: #686868;
@@ -22,20 +34,63 @@
   font-family: var(--mainEng-font), var(--mainKor-font);
   font-size: 16px;
   line-height: 1;
-  // font-weight: 400;
+  font-weight: 400;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-
-  // @media (max-width: 800px) {
-  //   font-size: 14px;
-  //   line-height: 1.4;
-  // }
 }
 
-body {
-  background-color: var(--mainBg-color);
+.fullpage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.xyzcontent {
+  transform-style: preserve-3d;
+  perspective: 1200px;
+}
+
+.back-nav {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: var(--main-margin);
+  height: 128px;
+  .back-arrow {
+    width: 48px;
+    height: 48px;
+    background-image: url(../../img/icon_arrow_back.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    &:hover {
+      animation: pre-arrow 0.4s ease-in-out infinite alternate;
+    }
+  }
+}
+
+@keyframes pre-arrow {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-8%);
+  }
+}
+
+@keyframes next-arrow {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(8%);
+  }
 }

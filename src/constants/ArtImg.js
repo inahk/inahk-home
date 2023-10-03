@@ -1,0 +1,42 @@
+export const ArtImg = [
+  {
+    id: 0,
+    file: "01.png",
+    title: "Art 01",
+    description: "대략적인 설명 혹은 내가 쓰고 싶은 말",
+    date: "01. 01.",
+    color: "#E4CFDA",
+  },
+  {
+    id: 1,
+    file: "02.png",
+    title: "img 02",
+    description: "대략적인 설명 혹은 내가 쓰고 싶은 말",
+    date: "01. 01.",
+    color: "#D4E4CF",
+  },
+  {
+    id: 2,
+    file: "03.png",
+    title: "img 03",
+    description: "대략적인 설명 혹은 내가 쓰고 싶은 말",
+    date: "01. 01.",
+    color: "#E4E1CF",
+  },
+  {
+    id: 3,
+    file: "04.png",
+    title: "Art 04",
+    description: "대략적인 설명 혹은 내가 쓰고 싶은 말",
+    date: "01. 01.",
+    color: "#CFE0E4",
+  },
+  {
+    id: 4,
+    file: "05.png",
+    title: "img 05",
+    description: "대략적인 설명 혹은 내가 쓰고 싶은 말",
+    date: "01. 01.",
+    color: "#CFD1E4",
+  },
+];
