@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/inahk-home/static/css/main.1037fa56.css",
+    "main.js": "/inahk-home/static/js/main.a42dc0c8.js",
+    "static/media/img_monitor.svg": "/inahk-home/static/media/img_monitor.d7c442b905f64cfe7e2f.svg",
+    "index.html": "/inahk-home/index.html",
+    "static/media/icon_user.svg": "/inahk-home/static/media/icon_user.b03219b258cb2b8c5cbf.svg",
+    "static/media/icon_arrow_back.svg": "/inahk-home/static/media/icon_arrow_back.47bba3ee7e59cc937a93.svg",
+    "static/media/icon_arrow_right.svg": "/inahk-home/static/media/icon_arrow_right.4b32a5586701177f1b48.svg",
+    "static/media/icon_arrow_left.svg": "/inahk-home/static/media/icon_arrow_left.6a744061873685409dcb.svg",
+    "main.1037fa56.css.map": "/inahk-home/static/css/main.1037fa56.css.map",
+    "main.a42dc0c8.js.map": "/inahk-home/static/js/main.a42dc0c8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1037fa56.css",
+    "static/js/main.a42dc0c8.js"
+  ]
+}
