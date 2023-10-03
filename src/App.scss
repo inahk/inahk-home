@@ -188,8 +188,8 @@
       opacity: 0 !important;
     }
     .img-screen {
-      width: max(444px, 37vh) !important;
-      height: max(216px, 18vh) !important;
+      width: 37vh !important;
+      height: 18vh !important;
     }
   }
 }
@@ -254,8 +254,8 @@
       transition-timing-function: ease-in-out !important;
     }
     .img-screen {
-      width: max(444px, 37vh) !important;
-      height: max(216px, 18vh) !important;
+      width: 37vh !important;
+      height: 18vh !important;
       transition-property: width, height !important;
       transition-duration: 300ms, 600ms !important;
       transition-timing-function: ease-in-out !important;

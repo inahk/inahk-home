@@ -1,7 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { DesignImg } from "../constants/DesignImg";
-import { Link } from "react-router-dom";
 import useMouseScroll from "../constants/useMouseScroll";
 
 const Design = () => {

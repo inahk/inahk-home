@@ -2,11 +2,8 @@ import { useState, useEffect } from "react";
 
 const useMouseScroll = (Data) => {
   // CSS에서 사용하는 max() 함수
-  const cssValue = "max(468px, 39vh)";
-
-  // CSS 값에서 픽셀 값 추출
-  const matches = cssValue.match(/(\d+)px/g);
-  const pixelValue = matches ? parseFloat(matches[0]) : 0;
+  const cssValue = "39vh";
+  const pixelValue = (parseFloat(cssValue) / 100) * window.innerHeight;
 
   const [scrollX, setScrollX] = useState(0);
 
@@ -17,7 +14,7 @@ const useMouseScroll = (Data) => {
   const handleWheelScroll = (e) => {
     const scrollValue = e.deltaY;
 
-    let newScrollX = scrollX - scrollValue * 2.4;
+    let newScrollX = scrollX - scrollValue * 2.8;
 
     newScrollX = Math.round(newScrollX / pixelValue) * pixelValue;
 

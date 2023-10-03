@@ -38,7 +38,7 @@ const ArtDetail = (props) => {
         <div className="img-screen">
           <div className="art-img">
             <img
-              src={`/art-img/${imageDetails.file}`}
+              src={`https://inahk.github.io/inahk-home/art-img/${imageDetails.file}`}
               alt={`Art ${imageDetails.title}`}
             />
           </div>

@@ -42,22 +42,22 @@
     display: inline-block;
     position: relative;
     width: 100%;
-    height: max(240px, 24vh);
+    height: 24vh;
   }
   .design-list {
     @include flex();
-    column-gap: max(24px, 2vh);
+    column-gap: 2vh;
     position: absolute;
     top: 0;
     left: 0;
-    padding: 0 calc(50% - max(222px, 19.5vh));
+    padding: 0 calc(50% - 18.5vh);
     transition: 0.8s ease-out;
   }
   .design {
     @include flex($justify: center, $align: flex-start);
     position: relative;
-    width: max(444px, 37vh);
-    height: max(324px, 27vh);
+    width: 37vh;
+    height: 27vh;
     &.selected {
       cursor: pointer;
       .art-img img {

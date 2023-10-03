@@ -42,15 +42,15 @@
     display: inline-block;
     position: relative;
     width: 100%;
-    height: max(216px, 18vh);
+    height: 18vh;
   }
   .art-list {
     @include flex();
-    column-gap: max(24px, 2vh);
+    column-gap: 2vh;
     position: absolute;
     top: 0;
     left: 0;
-    padding: 0 calc(50% - max(222px, 19.5vh));
+    padding: 0 calc(50% - 18.5vh);
     transition: 0.8s ease-out;
   }
   .art {
@@ -69,8 +69,8 @@
   }
   .art-img {
     @include flex($justify: center);
-    width: max(444px, 37vh);
-    height: max(216px, 18vh);
+    width: 37vh;
+    height: 18vh;
     overflow: hidden;
     box-shadow: 40px 80px 200px rgba($sub1-main-color, 0.2);
     img {

@@ -49,7 +49,10 @@ const ArtMain = (props) => {
                 onClick={() => handleArtClick(index)} // 클릭 이벤트 핸들러 호출
               >
                 <div className="art-img">
-                  <img src={`art-img/${image.file}`} alt={`Art ${index}`} />
+                  <img
+                    src={`https://inahk.github.io/inahk-home/art-img/${image.file}`}
+                    alt={`Art ${index}`}
+                  />
                 </div>
                 <div className="art-data">
                   <h6 className="art-title">{image.title}</h6>
